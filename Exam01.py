@@ -9,8 +9,8 @@ else:
     print('you r stupid'),print('area rectangle = 50,\n')
 name = input("yourname:")
 print("good afternoon",name,"\n\nQuiz physics exam\nStatement\n: This exam is designed to review your physics knowledge\n: this exam has 10question,10 scores\n: you can take the exam with no time limit\n: should answer as A B C D,don't full stop\n: g = 10 m/s^2")
-talk = input("I hope you understand?:")
-print("\nGood Luck Your Exam")
+talk = input("\nI hope you understand?:")
+print("........................","\nGood Luck Your Exam\n","........................")
 class Question:
      def __init__(self, prompt, answer):
           self.prompt = prompt
@@ -46,17 +46,17 @@ def run_quiz(questions):
           answer = input(question.prompt)
           if answer == question.answer:
                score += 1
-     print(name,"you got", score, "out of", len(questions))
-if score <=3:
-	print("your grade is D")
-	print("you brain as Dog,more attentive!!!")
-elif 3<score<=6:
-	print("your grade is C")
-	print("you can Communicate in physics")
-elif 6<score<=8:
-	print("your grade is B")
-	print("you have a Big brain")
-else:
-	print("your grade is A")
-	print("A god of physics")
+     print("\n",name,"you got", score, "out of", len(questions))
 run_quiz(questions)
+if score <=3:
+	print(": your grade is D")
+	print(": you brain as Dog,more attentive!!!")
+elif 3<score<=6:
+	print(": your grade is C")
+	print(": you can Communicate in physics")
+elif 6<score<=8:
+	print(": your grade is B")
+	print(": you have a Big brain")
+else:
+	print(": your grade is A")
+	print(": A god of physics")
