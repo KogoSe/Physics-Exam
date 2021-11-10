@@ -44,7 +44,7 @@ def run_quiz(questions):
 	for question in questions:
 		answer = input(question.prompt)
 		if answer == question.answer:
-			score +=1,print("\n",name,"you got",score,len(questions))
+			score += 1,print("\n",name,"you got",score,len(questions))
 			if score <=3:
 				print(": your garde is D","\nYour Brain As Dog,more attentive!!!")
 			elif 3<score<=6:
